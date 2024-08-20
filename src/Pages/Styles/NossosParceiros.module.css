@@ -1,0 +1,15 @@
+.pagina {
+    width: 100%;
+    height: auto;
+    padding: clamp(2rem, 0.7143rem + 6.4286vw, 6.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: var(--titulo-1);
+    color: var(--cor-1);
+    margin-bottom: 32px;
+}
