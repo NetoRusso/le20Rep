@@ -1,0 +1,81 @@
+.cardContainer {
+  width: 280px;
+  height: 280px;
+  position: relative;
+}
+
+.cardTitle {
+	font-size: 32px;
+	color: var(--cor-6);
+	text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.cardOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--cor-1-overlay);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+	z-index: 1;
+}
+
+.botoesContainer {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* display: flex; */
+  justify-content: space-around;
+  margin: auto;
+  z-index: 2;
+}
+
+.botoesLink {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.botoesImagem {
+  width: 32px;
+  height: 32px;
+}
+
+.slideCard {
+  object-fit: contain;
+  display: none;
+}
+
+.cardContainer:hover {
+  width: 320px;
+  height: 320px;
+}
+
+.cardContainer:hover .cardOverlay {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 50%, var(--cor-1));
+}
+
+.cardContainer:hover .cardTitle {
+  display: none;
+}
+
+.cardContainer:hover .botoesContainer {
+  display: flex; 
+}
+
+.botoesImagem:hover {
+  scale: 1.2;
+  filter: drop-shadow(0px 0px 10px var(--cor-1));
+}
