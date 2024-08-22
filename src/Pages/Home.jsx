@@ -4,6 +4,7 @@ import MapaMG from '../Components/Mapa';
 
 
 const Home = () => {
+  document.title = "Le'20";
   return (
     <>
       <Chamada />
