@@ -1,0 +1,107 @@
+.contatos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: clamp(2rem, 0.7143rem + 6.4286vw, 6.5rem);
+}
+
+.cabecalho {
+  padding-bottom: clamp(2rem, 0.7143rem + 6.4286vw, 6.5rem);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  padding: 48px 16px;
+}
+
+.formulario {
+  width: 40%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 16px;
+}
+
+.campo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 8px;
+}
+
+.formulario label {
+  font-size: 24px;
+  color: var(--cor-1);
+  font-weight: 700;
+}
+
+.formulario input { 
+  width: 100%;
+  height: 48px;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 24px;
+  outline: none;
+  padding-left: 16px;
+  border: 5px solid var(--cor-1);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cor-1);
+  box-shadow: -5px 5px 0px 3px var(--cor-1);
+}
+
+.formulario input:focus {
+  border: 3px solid var(--cor-4); 
+  box-shadow: 3px 3px 0px 3px var(--cor-4);
+}
+
+.formulario textarea {
+  width: 100%;
+  height: 150px;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 24px;
+  outline: none;
+  padding: 8px;
+  border: 5px solid var(--cor-1);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cor-1);
+  box-shadow: -5px 5px 0px 3px var(--cor-1);
+}
+
+.formulario textarea:focus {
+  border: 3px solid var(--cor-4); 
+  box-shadow: 3px 3px 0px 3px var(--cor-4);
+}
+
+.botao {
+  width: 120px;
+  height: 48px;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 24px;
+  outline: none;
+  padding: 5px 10px;
+  border: 5px solid var(--cor-1);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cor-1);
+  box-shadow: -5px 5px 0px 3px var(--cor-1);
+}
+
+.botao:hover {
+  cursor: pointer;
+  scale: 0.9;
+  border: 3px solid var(--cor-4);
+  box-shadow: 3px 3px 0px 3px var(--cor-4);
+}
