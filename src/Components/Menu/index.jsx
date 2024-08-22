@@ -12,17 +12,17 @@ const Menu = () => {
         <nav className={Style.navegacao}>
           <ul className={Style.listaMenu}>
             <li className={Style.item}>
-              <a href="#">
+              <a href="/">
                 Le'20
               </a>
             </li>
             <li className={Style.item}>
-              <a href="#">
+              <a href="/nossosParceiros">
                 Nossos Parceiros
               </a>
             </li>
             <li className={Style.item}>
-              <a href="#">
+              <a href="/contatos">
                 Contatos
               </a>
             </li>
