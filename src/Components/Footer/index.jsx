@@ -4,7 +4,7 @@ import Logo from "../../assets/Le20_Logo_Cor_1.svg";
 import Local from "../../assets/local_square.png";
 import instagram from "../../assets/instagram.svg";
 import whatsapp from "../../assets/whatsapp.svg";
-import Donuts from "../../assets/Logo H.png";
+import Donuts from "../../assets/Simbolo_completo.png";
 
 const Footer = () => {
   return (
@@ -14,8 +14,9 @@ const Footer = () => {
         <img src={Logo} alt="Le20 Logo" className={Style.logo} />
         <div className={Style.social}>
           <div className={Style.endereco}>
-            <a href='https://maps.app.goo.gl/TwJpUVbYQoNW5GbT9' title='Google Maps' target='_blank' />
+            <a href='https://maps.app.goo.gl/WoLk4nscWErCy7sw7' title='Google Maps' target='_blank' >
             <img src={Local} alt="Localização" className={Style.local} />
+            </a>
             <p className={Style.enderecoEscritorio}>
               Rua Marcos Alves Barbosa, 115 - B. Santa Luzia -Uberlândia - MG- 38.408-696
             </p>
@@ -34,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={Style.copy}>
-          <p className={Style.compyTexto}>Todos os direitos Reservados <br />||© 2024 Le'20 representações</p>
+          <p className={Style.copyTexto}>Todos os direitos Reservados || © 2024 Le'20 Representações</p>
           <div className={Style.donuts}>
             <a href='https://www.donutstech.com.br/' title='Donuts Tech' target='_blank'>
               <img src={Donuts} alt="Donuts" className={Style.donutsLogo} />
