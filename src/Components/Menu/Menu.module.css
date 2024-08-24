@@ -32,7 +32,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 
@@ -83,4 +82,146 @@
 .rede:hover {
   filter: brightness(0.8);
   scale: 1.2;
+}
+
+.menuMobile {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--cor-4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px 1px var(--cor-1-overlay);
+  z-index: 30;
+}
+
+.hamburger {
+  width: auto;
+  height: 32px;
+  object-fit: cover;
+}
+
+.fundoModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-1-overlay);
+  z-index: 31;
+}
+
+.baseMobileFechado {
+  display: none;
+}
+
+.baseMobile {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  min-width: 210px;
+  height: 444px;
+  background-color: var(--cor-4);
+  z-index: 32;
+  border-top-right-radius: 50px;
+  padding: 32px;
+}
+
+.closeMobile {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-5);
+  border-radius: 50px;
+}
+
+.closeIcon {
+  color: var(--cor-6);
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.logoMobile {
+  width: auto;
+  height: 40px;
+  margin-bottom: 56px;
+}
+
+.navegacaoMobile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.listaMenuMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  list-style: none;
+}
+
+.itemMobile a {
+  text-decoration: none;
+  color: var(--cor-6);
+  background-color: none;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.redesMobile {
+  display: flex;
+  align-items: center;
+  margin-right: -16px;
+  gap: 16px;
+}
+
+.linkRedeMobile {
+  width: 40px;
+  height: 40px;
+}
+
+.redeMobile {
+  width: 32px;
+  height: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menuMobile {
+    display: flex;
+  }
+
+  .barra {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .baseMobile {
+    display: none;
+  }
+
+  .fundoModal {
+    display: none;
+  }
+  
 }
